@@ -1,17 +1,14 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Orbitron } from 'next/font/google'
+import { qyxFontVariables } from '@/lib/qyx-fonts'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const orbitron = Orbitron({ subsets: ['latin'], variable: '--font-orbitron' })
 
 export const metadata: Metadata = {
   title: 'QYXpay | Payment Console',
-  description: 'The QYXpay payment console prototype. Explore payment operations, invoice previews, wallet setup, and the CPay SDK.',
+  description: 'QYXpay, by QuantumYield. A precision-engineered interface prototype for the CPay PHP SDK.',
   robots: { index: false, follow: false },
 }
 export const viewport: Viewport = { themeColor: '#0A0A0A', width: 'device-width', initialScale: 1 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`bg-background ${inter.variable} ${orbitron.variable}`}><body className="font-sans text-foreground">{children}</body></html>
+  return <html lang="en" className={`qyx-root ${qyxFontVariables}`}><body className="qyx-root">{children}</body></html>
 }
