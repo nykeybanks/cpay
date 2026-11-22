@@ -1,4 +1,4 @@
-# DApp Crypto Payment Gateway SDK
+# QYXpay DeFi digital-assets transmission gateway (QYC Payments) Crypto Payment Gateway SDK via DApp Setup
 
 PHP SDK for accepting cryptocurrency payments **without KYC/KYB**.  
 Supports MetaMask, Trust Wallet and popular cryptocurrencies.
